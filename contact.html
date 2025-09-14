@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>GlobeMart — Contact</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html">GlobeMart</a>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="about.html">About</a>
+      <a href="help.html">Help</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+      <a href="cart.html">Cart (<span id="cart-count-5">0</span>)</a>
+      <a href="login.html" id="auth-link-5">Login</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap main">
+  <h2>Contact Us</h2>
+  <form id="contact-form" class="form">
+    <label>Full name<input id="contact-name" required></label>
+    <label>Email<input id="contact-email" type="email" required></label>
+    <label>Message<textarea id="contact-message" rows="6" required></textarea></label>
+    <div><button class="btn" type="submit">Send</button></div>
+    <p id="contact-feedback" class="muted"></p>
+  </form>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <small>© GlobeMart — Demo storefront.</small>
+  </div>
+</footer>
+
+<script src="js/app.js" defer></script>
+</body>
+</html>

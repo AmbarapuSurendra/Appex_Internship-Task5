@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>GlobeMart — Login</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html">GlobeMart</a>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="about.html">About</a>
+      <a href="help.html">Help</a>
+      <a href="contact.html">Contact</a>
+      <a href="cart.html">Cart (<span id="cart-count-8">0</span>)</a>
+      <a href="login.html" aria-current="page">Login</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap main">
+  <h2>Login</h2>
+  <form id="login-form" class="form">
+    <label>Email<input id="login-email" type="email" required></label>
+    <label>Password<input id="login-password" type="password" required minlength="6"></label>
+    <div><button class="btn" type="submit">Login</button> <a href="register.html">Register</a></div>
+    <p id="login-feedback" class="muted"></p>
+  </form>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <small>© GlobeMart — Demo storefront.</small>
+  </div>
+</footer>
+
+<script src="js/app.js" defer></script>
+</body>
+</html>

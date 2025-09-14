@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>GlobeMart — Products</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html">GlobeMart</a>
+    <div class="search">
+      <input id="global-search" placeholder="Search for products, brands and more" />
+      <button id="search-btn-2">Search</button>
+    </div>
+    <nav class="nav">
+      <a href="products.html" aria-current="page">Products</a>
+      <a href="about.html">About</a>
+      <a href="help.html">Help</a>
+      <a href="contact.html">Contact</a>
+      <a href="cart.html" id="cart-link-2">Cart (<span id="cart-count-2">0</span>)</a>
+      <a href="login.html" id="auth-link-2">Login</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap main products-layout">
+  <aside class="filters">
+    <h4>Filters</h4>
+    <label>Category
+      <select id="filter-category">
+        <option value="all">All</option>
+        <option value="electronics">Electronics</option>
+        <option value="home">Home</option>
+        <option value="fitness">Fitness</option>
+        <option value="fashion">Fashion</option>
+      </select>
+    </label>
+    <label>Sort by
+      <select id="sort">
+        <option value="default">Relevance</option>
+        <option value="price-asc">Price — Low to High</option>
+        <option value="price-desc">Price — High to Low</option>
+      </select>
+    </label>
+    <div class="price-range">
+      <label>Max Price <input id="max-price" type="number" placeholder="e.g. 5000" /></label>
+    </div>
+  </aside>
+
+  <section class="product-area">
+    <div class="controls-row">
+      <div id="results-count" class="muted">Showing products</div>
+      <div class="view-toggle"><button id="grid-view">Grid</button><button id="list-view">List</button></div>
+    </div>
+    <div id="product-list" class="product-grid" aria-live="polite"></div>
+	
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <small>© GlobeMart — Demo storefront. All data local to your browser.</small>
+  </div>
+</footer>
+
+<script src="js/app.js" defer></script>
+</body>
+</html>
